@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     // Using your verified domain - sends form submissions to your email
     const { data, error } = await resend.emails.send({
       from: `Contact Form <contact@${siteConfig.domain}>`,
-      to: siteConfig.email, // Sending to YOUR email (Jonathaneckelberry@gmail.com) with customer info
+      to: siteConfig.email, // Sending to contact email with customer info
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

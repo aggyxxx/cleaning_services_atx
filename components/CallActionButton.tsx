@@ -43,11 +43,11 @@ export function CallActionButton({
 
       {showOptions && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
           onClick={handleClose}
         >
           <div
-            className="mx-4 w-full max-w-sm rounded-3xl bg-white p-6 shadow-2xl"
+            className="w-full max-w-sm rounded-3xl bg-white p-6 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mb-4 text-center">
