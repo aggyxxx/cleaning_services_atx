@@ -150,16 +150,16 @@ export default function ApplyPage() {
               Apply to Work With Us
             </h1>
             <p className="mt-5 mx-auto max-w-3xl text-base leading-relaxed text-slate-600 lg:text-lg">
-              Austin Commercial Cleaning is hiring reliable, detail-oriented cleaners for commercial spaces and Airbnb turnovers in the Austin area. We value professionalism, reliability, and offer flexible scheduling to fit your lifestyle.
+              Cozy Clean ATX is hiring reliable, detail-oriented cleaners for commercial spaces and Airbnb turnovers in the Austin area. We value professionalism, reliability, and offer flexible scheduling to fit your lifestyle.
             </p>
           </div>
 
           {/* Form Section */}
-          <div className="rounded-[32px] border border-white/60 bg-gradient-to-br from-white/95 via-green-50/40 to-emerald-50/40 p-8 shadow-[0_45px_140px_-75px_rgba(71,85,105,0.45)] backdrop-blur-xl md:p-12">
+          <div className="rounded-[32px] border border-white/60 bg-gradient-to-br from-white/95 via-stone-50/40 to-slate-50/40 p-8 shadow-[0_45px_140px_-75px_rgba(71,85,105,0.15)] backdrop-blur-xl md:p-12">
             {submitStatus === "success" ? (
               <div className="text-center py-12">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6">
-                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-sage-100 mb-6">
+                  <svg className="w-8 h-8 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
@@ -171,7 +171,7 @@ export default function ApplyPage() {
                 </p>
                 <a
                   href="/"
-                  className="cleaning-effect inline-flex items-center justify-center rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-7 py-3.5 text-base font-semibold text-white shadow-pastel transition hover:-translate-y-0.5 hover:shadow-glow"
+                  className="cleaning-effect inline-flex items-center justify-center rounded-full bg-sage-500 px-7 py-3.5 text-base font-semibold text-white shadow-soft transition hover:bg-sage-600 hover:-translate-y-0.5"
                 >
                   Return to Home
                 </a>
@@ -194,7 +194,7 @@ export default function ApplyPage() {
                       placeholder="Your full name"
                       className={`h-12 rounded-xl border ${
                         errors.name ? "border-red-300" : "border-white/70"
-                      } bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60`}
+                      } bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40`}
                       required
                     />
                     {errors.name && (
@@ -212,7 +212,7 @@ export default function ApplyPage() {
                       placeholder="you@example.com"
                       className={`h-12 rounded-xl border ${
                         errors.email ? "border-red-300" : "border-white/70"
-                      } bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60`}
+                      } bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40`}
                       required
                     />
                     {errors.email && (
@@ -230,7 +230,7 @@ export default function ApplyPage() {
                       placeholder="423-716-0930"
                       className={`h-12 rounded-xl border ${
                         errors.phone ? "border-red-300" : "border-white/70"
-                      } bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60`}
+                      } bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40`}
                       required
                     />
                     {errors.phone && (
@@ -244,7 +244,7 @@ export default function ApplyPage() {
                     <select
                       id="bestTime"
                       name="bestTime"
-                      className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60"
+                      className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40"
                     >
                       <option value="">Select a time</option>
                       <option value="Mornings (8am-12pm)">Mornings (8am-12pm)</option>
@@ -265,7 +265,7 @@ export default function ApplyPage() {
                     accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                     className={`rounded-xl border ${
                       errors.resume ? "border-red-300" : "border-white/70"
-                    } bg-white/80 px-4 py-3 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-green-100 file:text-green-700 hover:file:bg-green-200 file:cursor-pointer`}
+                    } bg-white/80 px-4 py-3 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-sage-100 file:text-sage-700 hover:file:bg-sage-200 file:cursor-pointer`}
                     required
                   />
                   <p className="text-xs text-slate-500 mt-1">
@@ -284,11 +284,11 @@ export default function ApplyPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="cleaning-effect w-full rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-6 py-3.5 text-base font-semibold text-white shadow-pastel transition hover:-translate-y-0.5 hover:shadow-glow disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="cleaning-effect w-full rounded-full bg-sage-500 px-6 py-3.5 text-base font-semibold text-white shadow-soft transition hover:bg-sage-600 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Submitting..." : "Submit Application"}
                   </button>
-                  <CallActionButton className="cleaning-effect w-full rounded-full border-2 border-green-200 bg-white/90 px-6 py-3.5 text-base font-semibold text-green-700 shadow-sm transition hover:-translate-y-0.5 hover:border-green-300 hover:bg-white text-center">
+                  <CallActionButton className="cleaning-effect w-full rounded-full border-2 border-sage-200 bg-white/90 px-6 py-3.5 text-base font-semibold text-sage-700 shadow-soft transition hover:-translate-y-0.5 hover:border-sage-300 hover:bg-white text-center">
                     Call {siteConfig.phoneDisplay}
                   </CallActionButton>
                 </div>

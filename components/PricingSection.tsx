@@ -44,11 +44,11 @@ export function PricingSection() {
   return (
     <SectionWrapper
       id="pricing"
-      className="mx-auto mt-12 max-w-6xl px-6 py-16 sm:py-20 lg:py-24 md:px-8 lg:max-w-7xl xl:max-w-[1400px] bg-gradient-to-br from-white via-green-50/20 to-emerald-50/20"
+      className="mx-auto mt-12 max-w-6xl px-6 py-16 sm:py-20 lg:py-24 md:px-8 lg:max-w-7xl xl:max-w-[1400px] bg-gradient-to-br from-white via-stone-50/20 to-slate-50/20"
     >
       <div className="space-y-8">
         <div className="text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 rounded-full bg-green-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-green-600">
+          <div className="inline-flex items-center gap-2 rounded-full bg-sage-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-sage-600">
             Pricing & booking
           </div>
           <h2
@@ -64,8 +64,8 @@ export function PricingSection() {
         <div className="grid grid-cols-1 gap-8 rounded-[32px] border border-white/60 bg-white/85 p-8 shadow-[0_40px_120px_-70px_rgba(122,66,255,0.55)] backdrop-blur-lg lg:grid-cols-[1fr_1.1fr] lg:gap-12 lg:p-12">
           <div className="space-y-6">
             <div className="grid gap-6">
-              <div className="rounded-3xl border border-green-100 bg-green-50/70 p-8 text-left text-slate-700 shadow-inner">
-                <h3 className="font-display text-2xl font-semibold text-green-700">
+              <div className="rounded-3xl border border-sage-100 bg-sage-50/70 p-8 text-left text-slate-700 shadow-inner">
+                <h3 className="font-display text-2xl font-semibold text-sage-700">
                   One-Time Commercial Cleaning
                 </h3>
                 <p className="mt-4 text-sm leading-relaxed">
@@ -75,15 +75,15 @@ export function PricingSection() {
                 </p>
                 <ul className="mt-4 space-y-3 text-sm leading-relaxed">
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                     <span>Detailed walkthrough and customized scope of work.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                     <span>Dedicated project lead on-site during service.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                     <span>
                       Custom pricing based on your specific needs and space requirements.
                     </span>
@@ -102,20 +102,20 @@ export function PricingSection() {
                 </p>
                 <ul className="mt-4 space-y-3 text-sm leading-relaxed">
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                     <span>
                       Structured service playbooks with ongoing quality audits.
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                     <span>
                       Flexible scheduling for after-hours, alternating shifts, or
                       day porter support.
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                     <span>
                       Custom proposals based on square footage, traffic levels, and
                       specialty requests.
@@ -130,27 +130,27 @@ export function PricingSection() {
               </h3>
               <ul className="mt-4 space-y-3 text-sm leading-relaxed">
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                   <span>
                     Consultation and proposal provided within one business day.
                   </span>
                 </li>
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                   <span>
                     Detailed proposal and schedule confirmation within one business
                     day of consultation.
                   </span>
                 </li>
                   <li className="flex items-start gap-3">
-                    <span className="mt-1 text-lg text-green-500">•</span>
+                    <span className="mt-1 text-lg text-sage-500">•</span>
                   <span>
                     Ongoing support from your account concierge for adjustments
                     and special projects.
                   </span>
                 </li>
               </ul>
-              <CallActionButton className="cleaning-effect mt-6 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-pastel transition hover:-translate-y-0.5 hover:shadow-glow">
+              <CallActionButton className="cleaning-effect mt-6 inline-flex items-center justify-center rounded-full bg-sage-500 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-sage-600 hover:-translate-y-0.5">
                 Call to Discuss Your Space
               </CallActionButton>
             </div>
@@ -165,7 +165,7 @@ export function PricingSection() {
                 return (
                   <div
                     key={faq.question}
-                    className="overflow-hidden rounded-2xl border border-white/60 bg-white/75 shadow-sm transition hover:border-green-200"
+                    className="overflow-hidden rounded-2xl border border-white/60 bg-white/75 shadow-sm transition hover:border-sage-200"
                   >
                     <button
                       type="button"
@@ -181,7 +181,7 @@ export function PricingSection() {
                         {faq.question}
                       </span>
                       <span
-                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/70 bg-white/80 text-lg text-green-500 shadow-inner"
+                        className="flex h-10 w-10 items-center justify-center rounded-full border border-white/70 bg-white/80 text-lg text-sage-500 shadow-inner"
                         aria-hidden="true"
                       >
                         {isOpen ? "−" : "+"}

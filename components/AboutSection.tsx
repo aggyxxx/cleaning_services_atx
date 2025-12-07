@@ -9,7 +9,7 @@ export function AboutSection() {
     >
       <div className="grid gap-8 rounded-[36px] border border-white/60 bg-white/90 p-8 shadow-[0_40px_110px_-60px_rgba(233,137,197,0.55)] backdrop-blur-lg lg:grid-cols-[1fr_0.9fr] lg:p-12">
         <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full bg-green-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-green-600">
+          <div className="inline-flex items-center gap-2 rounded-full bg-sage-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-sage-600">
             About us
           </div>
           <h2
@@ -33,10 +33,10 @@ export function AboutSection() {
           </p>
         </div>
         <div className="relative">
-          <div className="absolute -top-6 left-6 h-72 w-72 rounded-[30px] bg-gradient-to-br from-green-200 via-emerald-200 to-teal-200 opacity-70 blur-3xl" />
-          <div className="relative space-y-6 rounded-[28px] bg-white/90 p-8 shadow-glow backdrop-blur">
-            <div className="rounded-2xl border border-green-100 bg-green-50/60 p-6 text-slate-700">
-              <h3 className="font-display text-lg font-semibold text-green-700">
+          <div className="absolute -top-6 left-6 h-72 w-72 rounded-[30px] bg-sage-100/30 opacity-50 blur-3xl" />
+          <div className="relative space-y-6 rounded-[28px] bg-white/90 p-8 shadow-soft backdrop-blur">
+            <div className="rounded-2xl border border-sage-100 bg-sage-50/60 p-6 text-slate-700">
+              <h3 className="font-display text-lg font-semibold text-sage-700">
                 A Note from Our Founder
               </h3>
               <p className="mt-3 text-sm leading-relaxed">
@@ -45,12 +45,12 @@ export function AboutSection() {
                 We listen, document, and execute so your teams can focus on the
                 work that matters."
               </p>
-              <p className="mt-4 text-xs uppercase tracking-[0.3em] text-green-500">
+              <p className="mt-4 text-xs uppercase tracking-[0.3em] text-sage-500">
                 — Jonathan Eckelberry, Founder
               </p>
             </div>
-            <div className="rounded-2xl border border-white/60 bg-emerald-50/60 p-6 text-slate-700 shadow-inner">
-              <h3 className="font-display text-lg font-semibold text-emerald-700">
+            <div className="rounded-2xl border border-white/60 bg-sage-50/60 p-6 text-slate-700 shadow-inner">
+              <h3 className="font-display text-lg font-semibold text-sage-700">
                 Our Service Areas
               </h3>
               <p className="mt-3 text-sm leading-relaxed">

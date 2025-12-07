@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/lib/siteConfig";
-import { CCCLogo } from "@/components/CCCLogo";
+import { CozyCleanLogo } from "@/components/CozyCleanLogo";
 import { CallActionButton } from "@/components/CallActionButton";
 
 const navLinks = [
@@ -41,7 +41,7 @@ export function Navbar() {
       initial={false}
       animate={{
         boxShadow: scrolled
-          ? "0 12px 35px -20px rgba(34, 197, 94, 0.35)"
+          ? "0 12px 35px -20px rgba(93, 122, 93, 0.12)"
           : "0 0 0 rgba(0,0,0,0)",
         backgroundColor: scrolled ? "rgba(255, 255, 255, 0.85)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "blur(0px)"
@@ -51,25 +51,22 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-8 lg:max-w-7xl xl:max-w-[1400px]">
         <a
           href="/"
-          className="flex items-center gap-2 text-lg font-semibold text-slate-800 transition-transform hover:scale-[1.02] md:text-xl"
+          className="flex items-center transition-transform hover:scale-[1.02]"
         >
-          <CCCLogo size={128} />
-          <span className="font-display text-lg font-semibold text-slate-900 md:text-xl">
-            {siteConfig.businessName}
-          </span>
+          <CozyCleanLogo size={140} />
         </a>
         <div className="hidden items-center gap-1 rounded-full border border-white/70 bg-white/70 px-3 py-1.5 shadow-glow backdrop-blur-md lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-green-100/80 hover:text-slate-900"
+              className="rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-sage-100/60 hover:text-slate-900"
             >
               {link.label}
             </a>
           ))}
         </div>
-        <CallActionButton className="cleaning-effect hidden rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-5 py-2 text-sm font-semibold text-white shadow-glow transition hover:shadow-pastel lg:inline-flex">
+        <CallActionButton className="cleaning-effect hidden rounded-full bg-sage-500 px-5 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-sage-600 lg:inline-flex">
           Call Now
         </CallActionButton>
         <button
@@ -117,12 +114,12 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className="block rounded-2xl bg-white/70 px-4 py-3 text-sm font-medium text-slate-600 shadow-sm transition hover:bg-green-100/80 hover:text-slate-900"
+              className="block rounded-2xl bg-white/70 px-4 py-3 text-sm font-medium text-slate-600 shadow-sm transition hover:bg-sage-100/60 hover:text-slate-900"
             >
               {link.label}
             </a>
           ))}
-          <CallActionButton className="flex w-full items-center justify-center rounded-2xl bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:shadow-pastel">
+          <CallActionButton className="flex w-full items-center justify-center rounded-2xl bg-sage-500 px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-sage-600">
             Call Now
           </CallActionButton>
         </div>

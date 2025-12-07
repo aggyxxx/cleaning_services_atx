@@ -50,7 +50,7 @@ export function ProcessTimeline() {
     >
       <div className="space-y-8">
         <div className="text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-600">
+          <div className="inline-flex items-center gap-2 rounded-full bg-sage-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-sage-600">
             How we onboard
           </div>
           <h2
@@ -66,7 +66,7 @@ export function ProcessTimeline() {
         <div className="relative">
           {/* Desktop horizontal timeline */}
           <div className="relative hidden pt-16 lg:block">
-            <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-green-200 via-emerald-200 to-teal-200 z-0" />
+            <div className="absolute top-0 left-0 right-0 h-0.5 bg-sage-200 z-0" />
             <div className="relative mt-8 grid lg:grid-cols-4 lg:gap-8">
               {steps.map((item, index) => (
                 <motion.div
@@ -86,14 +86,14 @@ export function ProcessTimeline() {
                   className="relative flex flex-col items-center gap-6"
                 >
                   <div className="flex flex-col items-center gap-3">
-                    <div className="h-8 w-0.5 bg-gradient-to-b from-green-200 via-emerald-200 to-teal-200" />
-                    <div className="z-10 h-4 w-4 rounded-full border-2 border-white bg-green-300 shadow-sm" />
+                    <div className="h-8 w-0.5 bg-sage-200" />
+                    <div className="z-10 h-4 w-4 rounded-full border-2 border-white bg-sage-300 shadow-soft" />
                   </div>
                   <div className="relative w-full rounded-3xl border border-white/70 bg-white/80 p-6 text-center shadow-[0_20px_60px_-30px_rgba(145,102,255,0.3)] transition hover:-translate-y-1 hover:shadow-pastel">
-                    <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-green-100 via-emerald-100 to-teal-100 text-2xl shadow-sm">
+                    <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-sage-100 text-2xl shadow-soft">
                       {item.icon}
                     </div>
-                    <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-green-200 text-xs font-bold text-green-700">
+                    <div className="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-sage-200 text-xs font-bold text-sage-700">
                       {item.step}
                     </div>
                     <h3 className="font-display text-lg font-semibold text-slate-900 mb-2">
@@ -119,13 +119,13 @@ export function ProcessTimeline() {
                 className="relative pl-12"
               >
                 {index < steps.length - 1 && (
-                  <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-gradient-to-b from-green-200 via-emerald-200 to-teal-200" />
+                  <div className="absolute left-6 top-16 bottom-0 w-0.5 bg-sage-200" />
                 )}
-                <div className="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-green-100 via-emerald-100 to-teal-100 text-xl shadow-sm z-10">
+                <div className="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-sage-100 text-xl shadow-soft z-10">
                   {item.icon}
                 </div>
-                <div className="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-[0_20px_60px_-30px_rgba(34,197,94,0.3)]">
-                  <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-200 text-xs font-bold text-green-700 mb-3">
+                <div className="rounded-3xl border border-white/70 bg-white/80 p-6 shadow-[0_20px_60px_-30px_rgba(93,122,93,0.1)]">
+                  <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-sage-200 text-xs font-bold text-sage-700 mb-3">
                     {item.step}
                   </div>
                   <h3 className="font-display text-lg font-semibold text-slate-900 mb-2">

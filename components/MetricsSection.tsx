@@ -51,7 +51,7 @@ export function MetricsSection() {
   return (
     <SectionWrapper
       id="metrics"
-      className="mx-auto mt-12 max-w-6xl px-6 py-16 sm:py-20 lg:py-24 md:px-8 lg:max-w-7xl xl:max-w-[1400px] bg-gradient-to-br from-green-50/20 via-emerald-50/15 to-teal-50/20"
+      className="mx-auto mt-12 max-w-6xl px-6 py-16 sm:py-20 lg:py-24 md:px-8 lg:max-w-7xl xl:max-w-[1400px] bg-stone-50/30"
     >
       <h2 id="metrics-title" className="sr-only">
         Performance highlights
@@ -69,9 +69,9 @@ export function MetricsSection() {
                 margin: isMobile ? "0px" : "-30px"
               }}
               transition={{ duration: 0.3, delay: index * 0.02, ease: [0.25, 0.1, 0.25, 1] }}
-              className="group relative overflow-hidden rounded-3xl border border-white/70 bg-white/80 p-8 text-center shadow-[0_20px_60px_-30px_rgba(16,185,129,0.4)] transition hover:-translate-y-1 hover:shadow-pastel"
+              className="group relative overflow-hidden rounded-3xl border border-white/70 bg-white/80 p-8 text-center shadow-[0_20px_60px_-30px_rgba(93,122,93,0.1)] transition hover:-translate-y-1 hover:shadow-soft"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-green-100/30 via-emerald-100/30 to-teal-100/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-sage-50/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <div className="relative space-y-3">
                 <div className="text-3xl">{metric.icon}</div>
                 <div className="font-display text-3xl font-bold text-slate-900 lg:text-4xl">
@@ -92,7 +92,7 @@ export function MetricsSection() {
             {industries.map((industry) => (
               <span
                 key={industry}
-                className="rounded-full border border-green-200 bg-gradient-to-r from-green-50/90 to-emerald-50/90 px-5 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-green-300 hover:shadow-md"
+                className="rounded-full border border-sage-200 bg-sage-50/90 px-5 py-2 text-sm font-medium text-slate-700 shadow-soft transition hover:border-sage-300 hover:shadow-md"
               >
                 {industry}
               </span>

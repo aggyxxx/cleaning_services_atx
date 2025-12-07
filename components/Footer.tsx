@@ -18,18 +18,18 @@ export function Footer() {
             Commercial cleaning for offices, storefronts, professional spaces, and Airbnb properties.
           </p>
           <p className="text-xs text-slate-500 mt-3">
-            <a href="/apply" className="hover:text-green-600 transition-colors underline">
+            <a href="/apply" className="hover:text-sage-600 transition-colors underline">
               Interested in joining our cleaning team? Apply here.
             </a>
           </p>
         </div>
         <div className="space-y-3">
-          <CallActionButton className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:shadow-md">
+          <CallActionButton className="inline-flex items-center gap-2 rounded-full bg-sage-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-sage-600">
             📞 Call {siteConfig.phoneDisplay}
           </CallActionButton>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-white/80 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm transition hover:border-green-300 hover:bg-white"
+            className="inline-flex items-center gap-2 rounded-full border border-sage-200 bg-white/80 px-4 py-2 text-xs font-medium text-slate-600 shadow-soft transition hover:border-sage-300 hover:bg-white"
           >
             ✉️ {siteConfig.email}
           </a>

@@ -66,7 +66,7 @@ export function ContactSection({
       id={id}
       className={className}
     >
-      <div className="rounded-[32px] border border-white/60 bg-gradient-to-br from-white/95 via-green-50/40 to-emerald-50/40 p-8 shadow-[0_45px_140px_-75px_rgba(71,85,105,0.45)] backdrop-blur-xl md:p-12">
+      <div className="rounded-[32px] border border-white/60 bg-gradient-to-br from-white/95 via-stone-50/40 to-slate-50/40 p-8 shadow-[0_45px_140px_-75px_rgba(71,85,105,0.15)] backdrop-blur-xl md:p-12">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
@@ -85,12 +85,12 @@ export function ContactSection({
               learn about your business or property management needs.
             </p>
             <div className="flex flex-wrap items-center gap-4">
-              <CallActionButton className="cleaning-effect inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-6 py-3 text-base font-semibold text-white shadow-pastel transition hover:-translate-y-0.5 hover:shadow-glow">
+              <CallActionButton className="cleaning-effect inline-flex items-center gap-3 rounded-full bg-sage-500 px-6 py-3 text-base font-semibold text-white shadow-soft transition hover:bg-sage-600 hover:-translate-y-0.5">
                 📞 Call {siteConfig.phoneDisplay}
               </CallActionButton>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="cleaning-effect inline-flex items-center gap-2 rounded-full border-2 border-green-200 bg-white/90 px-5 py-2.5 text-sm font-semibold text-green-700 shadow-sm transition hover:-translate-y-0.5 hover:border-green-300 hover:bg-white"
+                className="cleaning-effect inline-flex items-center gap-2 rounded-full border-2 border-sage-200 bg-white/90 px-5 py-2.5 text-sm font-semibold text-sage-700 shadow-soft transition hover:-translate-y-0.5 hover:border-sage-300 hover:bg-white"
               >
                 ✉️ {siteConfig.email}
               </a>
@@ -101,11 +101,11 @@ export function ContactSection({
               </h3>
               <ul className="space-y-3 text-sm leading-relaxed text-slate-600">
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-0.5">✓</span>
+                  <span className="text-sage-500 mt-0.5">✓</span>
                   <span>We respond within one business day.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-green-500 mt-0.5">✓</span>
+                  <span className="text-sage-500 mt-0.5">✓</span>
                   <span>No obligation – proposals are tailored, not generic templates.</span>
                 </li>
               </ul>
@@ -126,7 +126,7 @@ export function ContactSection({
                   name="name"
                   type="text"
                   placeholder="Your name (e.g. Jordan, Priya, Emily…)"
-                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60"
+                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40"
                   required
                 />
               </div>
@@ -139,7 +139,7 @@ export function ContactSection({
                   name="email"
                   type="email"
                   placeholder="you@example.com"
-                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60"
+                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40"
                   required
                 />
               </div>
@@ -152,7 +152,7 @@ export function ContactSection({
                   name="phone"
                   type="tel"
                   placeholder="423-716-0930"
-                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60"
+                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40"
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -164,7 +164,7 @@ export function ContactSection({
                   name="squareFootage"
                   type="text"
                   placeholder="e.g. 3,500 sq ft office, 4 Airbnb units"
-                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60"
+                  className="h-12 rounded-xl border border-white/70 bg-white/80 px-4 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40"
                 />
               </div>
             </div>
@@ -177,14 +177,14 @@ export function ContactSection({
                 name="message"
                 rows={4}
                 placeholder="Tell us about your offices, storefront, or rentals…"
-                className="rounded-xl border border-white/70 bg-white/80 px-4 py-3 text-sm text-slate-600 shadow-inner focus:border-green-300 focus:outline-none focus:ring-4 focus:ring-green-200/60"
+                className="rounded-xl border border-white/70 bg-white/80 px-4 py-3 text-sm text-slate-600 shadow-inner focus:border-sage-300 focus:outline-none focus:ring-4 focus:ring-sage-200/40"
               />
             </div>
             {submitStatus && (
               <div
                 className={`rounded-xl p-4 ${
                   submitStatus === "success"
-                    ? "bg-green-50 border border-green-200 text-green-800"
+                    ? "bg-sage-50 border border-sage-200 text-sage-800"
                     : "bg-red-50 border border-red-200 text-red-800"
                 }`}
               >
@@ -195,11 +195,11 @@ export function ContactSection({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="cleaning-effect w-full rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-6 py-3.5 text-base font-semibold text-white shadow-pastel transition hover:-translate-y-0.5 hover:shadow-glow disabled:opacity-50 disabled:cursor-not-allowed"
+                className="cleaning-effect w-full rounded-full bg-sage-500 px-6 py-3.5 text-base font-semibold text-white shadow-soft transition hover:bg-sage-600 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "Submitting..." : "Submit Inquiry"}
               </button>
-              <CallActionButton className="cleaning-effect w-full rounded-full border-2 border-green-200 bg-white/90 px-6 py-3.5 text-base font-semibold text-green-700 shadow-sm transition hover:-translate-y-0.5 hover:border-green-300 hover:bg-white text-center">
+              <CallActionButton className="cleaning-effect w-full rounded-full border-2 border-sage-200 bg-white/90 px-6 py-3.5 text-base font-semibold text-sage-700 shadow-soft transition hover:-translate-y-0.5 hover:border-sage-300 hover:bg-white text-center">
                 Call {siteConfig.phoneDisplay}
               </CallActionButton>
             </div>
