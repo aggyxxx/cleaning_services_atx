@@ -63,3 +63,4 @@ export function CozyCleanLogo({ className = "", size = 120 }: CozyCleanLogoProps
   );
 }
 
+

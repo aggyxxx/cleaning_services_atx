@@ -3,6 +3,8 @@ import { Manrope, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/siteConfig";
 import { CleaningParticles } from "@/components/CleaningParticles";
+import { ContactModalProvider } from "@/lib/useContactModal";
+import { ContactModal } from "@/components/ContactModal";
 
 const sans = Manrope({
   subsets: ["latin"],
@@ -62,20 +64,23 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sans.variable} ${display.variable}`}>
       <body className="min-h-screen bg-gradient-to-br from-stone-50 via-slate-50 to-stone-50 text-slate-800">
-        <div className="relative flex min-h-screen flex-col">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(93,122,93,0.04),transparent_55%)]" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-[radial-gradient(circle_at_center,_rgba(168,184,168,0.05),transparent_60%)] blur-3xl" />
-          <div className="relative flex flex-1 flex-col">
-            <CleaningParticles />
-            <a
-              href={`tel:${siteConfig.phoneHref}`}
-              className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:shadow-lg"
-            >
-              Skip to call Cozy Clean ATX
-            </a>
-            {children}
+        <ContactModalProvider>
+          <div className="relative flex min-h-screen flex-col">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(93,122,93,0.04),transparent_55%)]" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-[radial-gradient(circle_at_center,_rgba(168,184,168,0.05),transparent_60%)] blur-3xl" />
+            <div className="relative flex flex-1 flex-col">
+              <CleaningParticles />
+              <a
+                href={`tel:${siteConfig.phoneHref}`}
+                className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:shadow-lg"
+              >
+                Skip to call Cozy Clean ATX
+              </a>
+              {children}
+              <ContactModal />
+            </div>
           </div>
-        </div>
+        </ContactModalProvider>
       </body>
     </html>
   );
