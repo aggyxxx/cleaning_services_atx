@@ -105,7 +105,7 @@ export async function POST(request: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: `Job Applications <contact@${siteConfig.domain}>`,
       to: siteConfig.email, // Sending to YOUR email with applicant info
-      subject: `New Job Application – Chattanooga Commercial Cleaning`,
+      subject: `New Job Application – Austin Commercial Cleaning`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #333; border-bottom: 2px solid #4f46e5; padding-bottom: 10px;">

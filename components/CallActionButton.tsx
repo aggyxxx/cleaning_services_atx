@@ -61,13 +61,13 @@ export function CallActionButton({
             <div className="space-y-3">
               <button
                 onClick={handleCall}
-                className="w-full rounded-full bg-gradient-to-r from-lavender-400 via-blossom-400 to-mint-400 px-6 py-3.5 text-base font-semibold text-white shadow-pastel transition hover:-translate-y-0.5 hover:shadow-glow"
+                className="w-full rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-6 py-3.5 text-base font-semibold text-white shadow-pastel transition hover:-translate-y-0.5 hover:shadow-glow"
               >
                 📞 Call Now
               </button>
               <button
                 onClick={handleText}
-                className="w-full rounded-full border-2 border-lavender-200 bg-white px-6 py-3.5 text-base font-semibold text-lavender-700 transition hover:-translate-y-0.5 hover:border-lavender-300 hover:bg-lavender-50"
+                className="w-full rounded-full border-2 border-green-200 bg-white px-6 py-3.5 text-base font-semibold text-green-700 transition hover:-translate-y-0.5 hover:border-green-300 hover:bg-green-50"
               >
                 💬 Send a Text
               </button>

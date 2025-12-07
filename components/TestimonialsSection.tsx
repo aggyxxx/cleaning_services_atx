@@ -35,7 +35,7 @@ const testimonials = [
   },
   {
     name: "Alex T.",
-    role: "Property Manager, Downtown Chattanooga Rentals",
+    role: "Property Manager, Downtown Austin Rentals",
     quote:
       "Their turnaround cleaning for our Airbnb properties is flawless. Every guest arrives to a spotless space with fresh linens and stocked amenities. They coordinate seamlessly with our check-in schedule.",
     rating: 5
@@ -57,7 +57,7 @@ export function TestimonialsSection() {
   return (
     <SectionWrapper
       id="testimonials"
-      className="mx-auto mt-12 max-w-6xl px-6 py-16 sm:py-20 lg:py-24 md:px-8 lg:max-w-7xl xl:max-w-[1400px] bg-gradient-to-br from-blossom-50/30 via-lavender-50/20 to-mint-50/30"
+      className="mx-auto mt-12 max-w-6xl px-6 py-16 sm:py-20 lg:py-24 md:px-8 lg:max-w-7xl xl:max-w-[1400px] bg-gradient-to-br from-green-50/30 via-emerald-50/20 to-teal-50/30"
     >
       <div className="space-y-8 text-center lg:text-left">
         <div className="space-y-4">
@@ -68,7 +68,7 @@ export function TestimonialsSection() {
             id="testimonials-title"
             className="font-display text-3xl font-semibold text-slate-900 sm:text-4xl"
           >
-            Chattanooga Businesses Who Trust Our Service
+            Austin Businesses Who Trust Our Service
           </h2>
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-600 lg:mx-0 lg:max-w-3xl">
             From boutique retailers to medical practices and Airbnb properties, we become an extension
@@ -87,11 +87,11 @@ export function TestimonialsSection() {
                 margin: isMobile ? "0px" : "-30px"
               }}
               transition={{ duration: 0.3, delay: index * 0.02, ease: [0.25, 0.1, 0.25, 1] }}
-              className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/80 p-8 text-left shadow-[0_35px_100px_-60px_rgba(233,137,197,0.7)] transition hover:-translate-y-2 hover:shadow-pastel"
+              className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/80 p-8 text-left shadow-[0_35px_100px_-60px_rgba(34,197,94,0.7)] transition hover:-translate-y-2 hover:shadow-pastel"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blossom-100/50 via-lavender-100/40 to-mint-100/40 opacity-0 transition-opacity duration-300 hover:opacity-100" />
+              <div className="absolute inset-0 bg-gradient-to-br from-green-100/50 via-emerald-100/40 to-teal-100/40 opacity-0 transition-opacity duration-300 hover:opacity-100" />
               <div className="relative space-y-4">
-                <div className="flex items-center gap-2 text-blossom-500">
+                <div className="flex items-center gap-2 text-green-500">
                   {Array.from({ length: testimonial.rating }).map((_, index) => (
                     <span key={index} aria-hidden="true">
                       ★

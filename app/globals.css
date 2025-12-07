@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  @apply bg-blossom-50 text-slate-800 antialiased;
+  @apply bg-green-50 text-slate-800 antialiased;
 }
 
 a {
@@ -32,7 +32,7 @@ a {
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(233, 137, 197, 0.5), rgba(118, 213, 188, 0.5));
+  background: linear-gradient(135deg, rgba(74, 222, 128, 0.5), rgba(45, 212, 191, 0.5));
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);

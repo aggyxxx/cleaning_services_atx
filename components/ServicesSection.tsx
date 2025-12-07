@@ -69,7 +69,7 @@ export function ServicesSection() {
     >
       <div className="space-y-8 text-center lg:text-left">
         <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 rounded-full bg-lavender-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-lavender-600">
+          <div className="inline-flex items-center gap-2 rounded-full bg-green-100/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-green-600">
             Services that sparkle
           </div>
           <h2
@@ -79,7 +79,7 @@ export function ServicesSection() {
             Impeccable Care for Every Type of Space
           </h2>
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-600 lg:mx-0 lg:max-w-3xl">
-            We partner with Chattanooga businesses and property managers to uphold elevated workplace
+            We partner with Austin businesses and property managers to uphold elevated workplace
             standards, discreet operations, and consistent sparkle across every
             workspace, guest-facing area, and vacation rental.
           </p>
@@ -96,11 +96,11 @@ export function ServicesSection() {
                 margin: isMobile ? "0px" : "-30px"
               }}
               transition={{ duration: 0.3, delay: index * 0.02, ease: [0.25, 0.1, 0.25, 1] }}
-              className="cleaning-effect group relative overflow-hidden rounded-3xl border border-white/70 bg-white/80 p-8 text-left shadow-[0_30px_80px_-60px_rgba(118,213,188,0.75)] transition transform hover:-translate-y-2 hover:shadow-pastel"
+              className="cleaning-effect group relative overflow-hidden rounded-3xl border border-white/70 bg-white/80 p-8 text-left shadow-[0_30px_80px_-60px_rgba(16,185,129,0.75)] transition transform hover:-translate-y-2 hover:shadow-pastel"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blossom-100/40 via-lavender-100/40 to-mint-100/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-gradient-to-br from-green-100/40 via-emerald-100/40 to-teal-100/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <div className="relative space-y-4">
-                <div className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-br from-lavender-100/80 via-blossom-100/80 to-mint-100/80 px-4 py-3 text-3xl shadow-sm">
+                <div className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-br from-green-100/80 via-emerald-100/80 to-teal-100/80 px-4 py-3 text-3xl shadow-sm">
                   {service.icon}
                 </div>
                 <h3 className="font-display text-xl font-semibold text-slate-900">

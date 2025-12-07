@@ -41,7 +41,7 @@ export function Navbar() {
       initial={false}
       animate={{
         boxShadow: scrolled
-          ? "0 12px 35px -20px rgba(145, 102, 255, 0.35)"
+          ? "0 12px 35px -20px rgba(34, 197, 94, 0.35)"
           : "0 0 0 rgba(0,0,0,0)",
         backgroundColor: scrolled ? "rgba(255, 255, 255, 0.85)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "blur(0px)"
@@ -63,13 +63,13 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-blossom-100/80 hover:text-slate-900"
+              className="rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-green-100/80 hover:text-slate-900"
             >
               {link.label}
             </a>
           ))}
         </div>
-        <CallActionButton className="cleaning-effect hidden rounded-full bg-gradient-to-r from-lavender-400 via-blossom-400 to-mint-400 px-5 py-2 text-sm font-semibold text-white shadow-glow transition hover:shadow-pastel lg:inline-flex">
+        <CallActionButton className="cleaning-effect hidden rounded-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-5 py-2 text-sm font-semibold text-white shadow-glow transition hover:shadow-pastel lg:inline-flex">
           Call Now
         </CallActionButton>
         <button
@@ -117,12 +117,12 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className="block rounded-2xl bg-white/70 px-4 py-3 text-sm font-medium text-slate-600 shadow-sm transition hover:bg-blossom-100/80 hover:text-slate-900"
+              className="block rounded-2xl bg-white/70 px-4 py-3 text-sm font-medium text-slate-600 shadow-sm transition hover:bg-green-100/80 hover:text-slate-900"
             >
               {link.label}
             </a>
           ))}
-          <CallActionButton className="flex w-full items-center justify-center rounded-2xl bg-gradient-to-r from-lavender-400 via-blossom-400 to-mint-400 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:shadow-pastel">
+          <CallActionButton className="flex w-full items-center justify-center rounded-2xl bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:shadow-pastel">
             Call Now
           </CallActionButton>
         </div>
